@@ -17,7 +17,7 @@ color_map = {
 app = Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
 
 df = pd.read_csv('df_eu_day.csv')
-
+df1 = pd.read_csv('df_eu.csv')
 app.layout = html.Div([
      html.H1("Analyse Covid-19 dans l'espace schengen de l'Union Européenne", style={'textAlign': 'center'}),
      html.Div([
@@ -213,7 +213,7 @@ def update_data(chosen_rows, selection_year, piedropval, linedropval):
         labels= {'Country_Region' : 'Country','Last_Update': 'Date' } 
     )
 
-    density_mapbox_fig = px.density_mapbox(df, lat = 'Latitude', lon = 'Longitude', hover_name = 'Country_Region',
+    density_mapbox_fig = px.density_mapbox(df1, lat = 'Latitude', lon = 'Longitude', hover_name = 'Country_Region',
                         hover_data = ['Province_State', 'Confirmed', 'Deaths'],
                         animation_frame ='Last_Update', color_continuous_scale = 'Portland',
                         radius = 7, zoom = 3, height = 700)
