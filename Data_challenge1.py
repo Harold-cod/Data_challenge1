@@ -16,7 +16,7 @@ color_map = {
 
 app = Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
 
-df = pd.read_csv('C:\\Users\\Administrateur PC\\R et Python\\AppDash\\df_eu_day.csv')
+df = pd.read_csv('df_eu_day.csv')
 
 app.layout = html.Div([
      html.H1("Analyse Covid-19 dans l'espace schengen de l'Union Européenne", style={'textAlign': 'center'}),
