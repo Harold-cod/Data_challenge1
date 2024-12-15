@@ -19,7 +19,7 @@ app = Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLw
 df = pd.read_csv('C:\\Users\\Administrateur PC\\R et Python\\AppDash\\df_eu_day.csv')
 
 app.layout = html.Div([
-
+server = app.server
      html.H1("Analyse Covid-19 dans l'espace schengen de l'Union Européenne", style={'textAlign': 'center'}),
      html.Div([
         dash_table.DataTable(
