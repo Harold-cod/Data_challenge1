@@ -1,6 +1,6 @@
-dash==2.14.1
-dash-table==5.0.0
-dash-core-components==2.0.0
-dash-html-components==2.0.0
-pandas==2.1.1
-plotly==3.7.0
+dash
+dash-table
+dash-core-components
+dash-html-components
+pandas
+plotly
