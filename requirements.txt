@@ -1,7 +1,7 @@
-plotly==5.15.0
+plotly>=5.15.0
 dash-table
 dash-core-components
 dash-html-components
 pandas
-dash==2.14.0
+dash>=2.14.0
 gunicorn
